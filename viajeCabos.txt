@@ -1,0 +1,20 @@
+<p>
+Transporte: Avión </br> 
+Tiempo: 2 hrs. Con 15 mins. </br> 
+Lugar de salida: CDMX Terminal 1 </br> 
+Precio: $1,200 </br> 
+</p>
+
+<p>
+Transporte: Autobús </br>                
+Tiempo: 62 horas </br>                        
+Lugar de Salida: Central del Norte - Tijuana </br> 
+Precio: $4,500 </br>                       
+</p>
+
+<p>
+Transporte: Ferry </br> 
+Tiempo: 12 horas </br> 
+Lugar de salida: Mazatlán Sinaloa </br> 
+Precio: $2,000 </br> 
+</p>

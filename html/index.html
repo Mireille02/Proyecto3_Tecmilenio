@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <title>Proyecto 3</title>
+</head>
+
+<body>
+    <h1>Conoce y viaja por el mundo</h1>
+    <div>
+        <form class="form-inline" method="POST" action="">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" class="form-control"> </br></br>
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellidoP" placeholder="Apellido Paterno" class="form-control"> </br></br>
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellidoM" placeholder="Apellido Materno" class="form-control"> </br></br>
+            <label>Edad:</label>
+            <input type="text" id="edad" placeholder="Edad" class="form-control"> </br></br>
+            <label>Lugar de Interés:</label>
+            <input type="text" id="lugarInteres" placeholder="Lugar de Interés" class="form-control"> </br></br>
+            <label>Preferencias de Viaje:</label>
+            <input type="text" id="preferenciasViaje" placeholder="Preferencias de Viaje" class="form-control"> </br></br>
+            <label>Preferencias de Alojamiento:</label>
+            <input type="text" id="preferenciasAlojamiento" placeholder="Preferencias de Alojamiento" class="form-control"> </br></br></br>
+            <button id="Datos" type="button" onclick="validarCampos();">Validar Datos</button> </br></br>
+            </form>
+
+            <script>
+                function validarCampos() {
+                    nombre = document.getElementById("nombre").value;
+                    apellidoPaterno = document.getElementById("apellidoP").value;
+                    apellidoMaterno = document.getElementById("apellidoM").value;
+                    edad = document.getElementById("edad").value;
+                    lugarDeInteres = document.getElementById("lugarInteres").value;
+                    preferenciasDeViaje = document.getElementById("preferenciasViaje").value;
+                    preferenciasDeAlojamiento = document.getElementById("preferenciasAlojamiento").value;
+                    var mensaje = "";
+
+                    mensaje = validarCampoTexto(nombre, "NOMBRE", 20, mensaje);
+                    mensaje = validarCampoTexto(apellidoPaterno, "APELLIDO PATERNO", 20, mensaje);
+                    mensaje = validarCampoTexto(apellidoMaterno, "APELLIDO MATERNO", 20, mensaje);
+                    mensaje = validarCampoNumero(edad, "EDAD", mensaje);
+                    mensaje = validarCampoTexto(lugarDeInteres, "LUGAR DE INTERES", 20, mensaje);
+                    mensaje = validarCampoTexto(preferenciasDeViaje, "PREFERENCIAS DE VIAJE", 20, mensaje);
+                    mensaje = validarCampoTexto(preferenciasDeAlojamiento, "PREFERENCIAS DE ALOJAMIENTO", 40, mensaje);
+                    alert(mensaje);
+                    //window.open("../html/index2.html","_self" );
+                }   
+
+                function validarCampoTexto(cadena, texto, noCaracteres, mensaje) {
+                    if (cadena == "") {
+                        //alert("El campo " + texto + " es obligatorio")
+                        mensaje = mensaje + "El campo " + texto + " es obligatorio, "
+                    }
+                    else {
+                        if (isNaN(cadena) == false) {
+                            //alert("El campo " + texto + " tiene números")
+                            mensaje = mensaje + "El campo " + texto + " tiene números, "
+                        }
+                        else {
+                            if (cadena.length > noCaracteres)
+                               // alert("El campo " + texto + " tiene longitud mayor a " + noCaracteres)
+                               mensaje = mensaje + "El campo " + texto + " tiene longitud mayor a " + noCaracteres + ", "
+                        }
+                    }
+                    return mensaje;
+                }
+
+                function validarCampoNumero(cadena, texto, mensaje) {
+                    if (cadena == "") {
+                        //alert("El campo " + texto + " se encuentra vacía")
+                        mensaje = mensaje + "El campo " + texto + " se encuentra vacía, "
+                    }
+                    else {
+                        if (isNaN(cadena) == true) {
+                            //alert("El campo " + texto + " tienen que ser puros números");
+                            mensaje = mensaje + "El campo " + texto + " tienen que ser puros números, " 
+                        }
+                    }
+                    return mensaje;
+                }
+            </script>
+
+            <p></p>
+            <button type="button" onclick="mostrarInfoLugar();">Mostrar información del lugar</button>
+            <script>
+                function mostrarInfoLugar() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("infoLugar").innerHTML = this.responseText;
+                        }
+                    };
+                    var nombreArchivo = "";
+                    lugarDeInteres = document.getElementById("lugarInteres").value;
+                    if(lugarDeInteres == "Los Cabos")
+                        nombreArchivo = "../cabos.txt";
+                    if(lugarDeInteres == "Paris")
+                        nombreArchivo = "../paris.txt";
+                    xhttp.open("GET", nombreArchivo, true);
+                    xhttp.send();
+                }
+            </script>
+            <div id="infoLugar"></div>
+
+            <p></p>
+
+            <button type="button" onclick="mostrarInfoViaje();">Mostrar información del viaje</button>
+            <script>
+                function mostrarInfoViaje() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("infoViaje").innerHTML = this.responseText;
+                        }
+                    };
+                    var nombreArchivo = "";
+                    preferenciasDeViaje = document.getElementById("preferenciasViaje").value;
+                    if(preferenciasDeViaje == "Avión")
+                        nombreArchivo = "../viajeCabos.txt";
+                    if(preferenciasDeViaje == "Tren")
+                        nombreArchivo = "../viajeParis.txt";
+                    xhttp.open("GET", nombreArchivo, true);
+                    xhttp.send();
+                }
+            </script>
+            <div id="infoViaje"></div>
+
+            <p></p>
+            <button type="button" onclick="mostrarInfoAlojamiento();">Mostrar información del alojamiento</button>
+            <script>
+                function mostrarInfoAlojamiento() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("infoAlojamiento").innerHTML = this.responseText;
+                        }
+                    };
+                    var nombreArchivo = "";
+                    preferenciasDeAlojamiento = document.getElementById("preferenciasAlojamiento").value;
+                    if(preferenciasDeAlojamiento == "Hotel Riu Santa Fe")
+                        nombreArchivo = "../alojamientoCabos.txt";
+                    if(preferenciasDeAlojamiento == "Hotel Le Milie Rose")
+                        nombreArchivo = "../alojamientoParis.txt";
+                    xhttp.open("GET", nombreArchivo, true);
+                    xhttp.send();
+                }
+            </script>
+            <div id="infoAlojamiento"></div>
+        </form>
+    </div>
+
+</body>
+
+</html>

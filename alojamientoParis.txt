@@ -1,0 +1,26 @@
+<p>
+Hotel: Hotel Le Milie Rose </br>                
+Calificación: 4 estrellas </br>                        
+Habitaciones: 12m2 - 14m2 </br> 
+Características: caja fuerte, escritorio, televisión con Netflix, teléfono, radio, ropa de cama, patio, baño, WiFi gratis, aseo adicional y aire acondicionado </br>
+Servicios: Habitaciones sin humo, servicio de habitaciones, terraza, ascensor, parkin, WiFi, parking y cafetera en todas las habitaciones  </br>
+Costo: $17,271 </br>                       
+</p>
+
+<p>
+Hotel: Le Planque Hotel </br>                
+Calificación: 3 estrellas </br>                        
+Habitaciones: 13m2 - 22m2</br> 
+Características: cama doble grande, baño privado, TV pantalla plana, WiFi gartis, aire acondicionado, ducha, secador de cabello, armario, calefacción y escritorio </br>
+Servicios: WiFi gratis, habitaciones familiares, recepción 24 horas, ascensor, terraza, habitaciones sin humo, jardín, calefacción y desayuno incluido </br>
+Costo: $4,671 </br>   
+</p>
+
+<p>
+Hotel: Apartements Du Louvre - Le Marais </br>                
+Calificación: 4 estrellas </br>                        
+Habitaciones: 60m2 </br> 
+Características: baño privado, vista a la ciudad, lavavajilla, TV de pantalla plana, aire acondicionado, cocina privada, lavadora, 2 dormitorios y aseo independiente. </br>
+Servicios: WiFi gratis, habitaciones familiares, habitaciones sin humo, gimnasio, ascensor, calefacción, guardaequipaje, aire acondicionado </br>
+Costo: $24,421 </br>  
+</p>

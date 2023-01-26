@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 body {
@@ -12,6 +12,11 @@ body {
     position: relative;
     height: 100vh;
     font-weight: 400;
+
+    margin-top: 2px;
+    width:100%;
+    padding-left: 5px;
+    height: 35px;
 }
 
 div {
@@ -20,4 +25,10 @@ div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+button {
+    border: auto;
+    border-radius: 5px; /*que las esquinas no sean cuadradas sino que sean un poco redondas*/
+    background-color: azure;   
 }

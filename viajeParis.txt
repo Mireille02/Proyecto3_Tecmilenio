@@ -1,0 +1,20 @@
+<p>
+Transporte: Tren </br> 
+Tiempo: 12 horas </br> 
+Lugar de salida: Madrid </br> 
+Precio: 152,50 US$ </br> 
+</p>
+
+<p>
+Transporte: Avión </br>                
+Tiempo: 1 hora con 55 mins </br>                        
+Lugar de Salida: España </br> 
+Precio: 54,40 US$  </br>                       
+</p>
+
+<p>
+Transporte: Autobús </br> 
+Tiempo: 16 y 18 horas </br> 
+Lugar de salida: Madrid </br> 
+Precio: 20.63 US$ </br> 
+</p>

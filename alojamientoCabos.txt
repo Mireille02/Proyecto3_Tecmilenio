@@ -1,0 +1,26 @@
+<p>
+Hotel: Hotel Riu Santa Fe </br>                
+Calificación: 5 estrellas </br>                        
+Habitaciones: 28m2 - 34m2 </br> 
+Características: 2 camas, sofá o sofá, TV satélite, cafetera, zona de estar, aire acondicionado, minibar, dispensadores de bebidas, balcón o terraza y baño privado </br>
+Servicios: WiFi gratis, alberca, estacionamiento incluido, gimnasio, restaurante, bar, gimnasio, servicio de habitación, desayuno disponible, mascotas, tina de hidromasaje y spa </br>
+Costo: $4,540.80 </br>                       
+</p>
+
+<p>
+Hotel: Casa Dorada Los Cabos </br>                
+Calificación: 4.5 estrellas </br>                        
+Habitaciones: 42m2 - 171m2</br> 
+Características: cama king, sofá cama individual grande, vista al mar, baño privado, tina y regaderas separadas, WiFi gratis y televisión de paga </br>
+Servicios: WiFi gratis, alberca, playa privada, mascotas, estacionamiento incluido, servicio de habitación, desayuno disponible, restaurante, lavandería, bar, tina de hidromasaje y gimnasio </br>
+Costo: $7,755 </br>   
+</p>
+
+<p>
+Hotel: Hilton Los Cabos Beach</br>                
+Calificación: 4.5 estrellas </br>                        
+Habitaciones: 51m2 - 118m2</br> 
+Características: cama king, desayuno incluido, vista al mar, WiFi gratis, baño privado, secadora de cabello, tina y regaderas separadas, aire acondicionado y televisión de paga </br>
+Servicios: WiFi gratis, alberca, playa privada, mascotas, estacionamiento incluido, recepción 24 horas, servicio de habitación, desayuno disponible, gimnasio, tina de hidromasaje, restaurante, bar, spa </br>
+Costo: $33,782 </br>  
+</p>
